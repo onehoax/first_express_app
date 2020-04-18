@@ -52,4 +52,4 @@ app.set('view engine', 'hjs')
 // 5000 is a typical localhost port number
 app.listen(80);
 // Comfirmation for developer that server is fact running
-console.log('Server running on http://localhost:80');
+console.log('Server running on http://localhost:80 - Hellos world again!');
