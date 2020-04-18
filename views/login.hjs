@@ -1,0 +1,23 @@
+<html>
+    <head>
+        {{!-- don't need to include ./public in href path bc we already 
+        specified in main that the app should look in the public dir for any 
+        static assets: we also include the deafult styles from boostrap
+        found in bootstrap cdn  --}}
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        {{!-- Bootstrap provides predetermined styles; by using the class "container"
+        we get some predtermined style defined by bootstrap --}}
+        <div class="container">
+            <h1>Login</h1>
+            {{!-- Post request and use the /action route handler in ../routes/index.js --}}
+            <form method="post" action="/login">
+                <input type="text" name="username" placeholder="Username"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+    </body>
+</html>
